@@ -1,0 +1,681 @@
+
+body{
+    background: #EBEBF0;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('/assets/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito Bold;
+    src: url('/assets/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: Nunito Light;
+    src: url('/assets/fonts/Nunito-Light.ttf');
+}
+
+
+
+
+
+.fluid-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* navigation bar section  */
+
+ .navigation-wrapper{
+    width: 100%;
+    background: #3E7BFA;
+    height: 48px;
+    box-shadow: 0px 4px 8px #60617029;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 48px;
+}
+
+
+.brand-logo{
+    width: 84px;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu{
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu-item{
+    padding: 8px 24px;
+    font-size: 14px;
+    font-family: 'Nunito Bold';
+    color: white;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-bottom: solid white 2px;
+}
+
+.message-notification{
+    display: flex;
+    align-items: center;
+}
+
+.right-section-item{
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-badge{
+    position: absolute;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    left: 12px;
+    top: 0;
+} 
+
+.user{
+    width: 32px;
+    height: 32px;
+}
+
+.user img{
+    border-radius: 50%;
+}
+
+.collapse-btn{
+    display: flex;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+.collapse-menu{
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 260px;
+    height: 640px;
+    background: white;
+    transition-duration: 500ms;
+}
+
+.collapse-menu-header{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 8px 16px;
+}
+
+.collapse-header-item{
+    display: flex;
+}
+
+.collapse-menu-item{
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: #1C1C28;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.collapse-menu-item:hover{
+    background: #3E7BFA;
+    transition-duration: 300ms;
+    color: white;
+}
+
+/* navigation bar section end  */
+
+
+.hide-item{
+    display: none;
+}
+
+.show-item{
+    display: flex;
+}
+
+.show-collapse-menu{
+    left: 0;
+    z-index: 1;
+}
+
+
+/* create new influencer section  */
+
+.create-new-influencer{
+    width: 1152px;
+    margin: 32px auto;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-new-influencer-header{
+    font-size: 20px;
+    font-family: 'Nunito Bold';
+    color: #3E7BFA;
+    margin: 8px 0;
+}
+
+.create-new-influencer-content{
+    width: 100%;
+    height: 520px;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0px 0.5px 2px #60617029;
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-btn{
+    display: flex;
+    align-items: center;
+}
+
+.save-btn{
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Nunito Light';
+    color: #555770;
+    font-weight: 300;
+}
+
+.save-btn img{
+    height: 100%;
+    margin-right: 4px;
+}
+
+.save-btn span{
+    margin-right: 8px;
+}
+
+.share-btn{
+    width: 32px;
+    height: 32px;
+    border: solid 1px #3E7BFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.share-btn img{
+    width: 50%;
+}
+
+.download-btn{
+    width: 32px;
+    height: 32px;
+    border: solid 1px #3E7BFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn img{
+    width: 50%;
+}
+
+.add-item-btn{
+    color: white;
+    font-size: 12px;
+    font-family: 'Nunito';
+    background: #3E7BFA;
+    width: 126px;
+    height: 32px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.content-table{
+    box-shadow: 0px 2px 4px #60617029;
+    padding: 0;
+}
+
+.table thead th{
+    border-bottom: none;
+    border-top: none;
+}
+
+
+tr{
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.selection-col{
+    width: 5%;
+}
+
+.influencer-col{
+    width: 25%;
+    padding: 1rem !important;
+}
+
+.type-col{
+    width: 10%;
+}
+
+.channel-col{
+    width: 10%;
+}
+
+.job-col{
+    width: 15%;
+}
+
+.cost-col{
+    width: 15%;
+}
+
+.note-col{
+    width: 20%;
+}
+
+.no-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1104px;
+    height: 220px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.no-content-img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.no-content-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.text-title{
+    font-size: 20px;
+    font-family: 'Nunito Bold';
+    color: #3E7BFA;
+}
+
+.text-content{
+    font-size: 14px;
+    font-family: 'Nunito Light';
+}
+
+/* custom checkbox  */
+.TriSea-technologies-Switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.TriSea-technologies-Switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.TriSea-technologies-Switch > label::before {
+    background: rgba(235, 235, 240, 1);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    transition: all 0.4s ease-in-out;
+    width: 35px;
+}
+.TriSea-technologies-Switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 16px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    width: 16px;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::before {
+    background: rgb(62, 123, 250);
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
+    background: white;
+    left: 20px;
+}
+/* custom checkbox end */
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.total-items{
+    display: flex;
+}
+
+.total{
+    margin-right: 40px;
+    color: #555770;
+    font-family: 'Nunito Light';
+    font-size: 14px;
+}
+
+.price-quotation{
+    width: 134px;
+    height: 32px;
+    background: #3E7BFA;
+    color: white;
+    font-size: 12px;
+    font-family: 'Nunito';
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-edit-btn{
+    cursor: pointer;
+}
+
+.edit-mode{
+    border: solid 1px #00000029;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.confirm-edit{
+    cursor: pointer;
+}
+
+.cancel-edit{
+    cursor: pointer;
+}
+/* create new influencer section end  */
+
+
+
+/* footer section  */
+.footer{
+    height: 109px;
+    background: #3E7BFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.brand-slogan{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.policy{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.policy-link a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+/* footer section end  */
+
+
+
+
+@media only screen and (max-width: 1160px) {
+
+    
+
+    .create-new-influencer{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .create-new-influencer-content{
+        height: 90%;
+    }
+
+    .content-table{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .no-content{
+        width: 100%;
+    }
+
+    .table{
+        display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 800px) {
+
+    .content-table{
+        box-shadow: none;
+    }
+
+    .no-content{
+        flex-direction: column;
+        margin-top: 8px;
+        height: auto;
+    }
+
+    .no-content-img, .no-content-text{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .no-content-img{
+        margin-top: 8px;
+        height: 100%;
+    }
+
+    .no-content-img img{
+        /* width: 40% !important; */
+        margin-bottom: 8px;
+        height: 100%;
+    }
+
+    .no-content-text{
+        margin-left: unset;
+        text-align: center;
+    }
+
+    .total-items{
+        flex-direction: column;
+    }
+
+  }
+
+  @media only screen and (max-width: 730px) {
+      .menu-item{
+          padding: 8px 12px;
+      }
+  }
+
+
+
+  @media only screen and (max-width: 660px) {
+    
+    .menu{
+        display: none;
+    }
+
+    .message-notification{
+        display: none;
+    }
+
+    .collapse-btn{
+        display: flex;
+    }
+
+    .create-new-influencer{
+        padding: 0;
+        margin: 0 auto;
+        /* height: 100%; */
+    }
+
+    .create-new-influencer-header{
+        padding-left: 8px;
+    }
+
+    .create-new-influencer-content-header{
+        align-items: center;
+        order: 1;
+        margin: 16px 0;
+    }
+
+    .create-new-influencer-content{
+        padding: 16px 8px;
+        height: auto;
+    }
+
+    .content-table{
+        order: 2;
+    }
+
+    .no-content-img{
+        height: 220px;
+        margin-top: 36px;
+    }
+
+    .no-content-img img{
+        width: 80% !important;
+    }
+
+    .add-item-btn{
+        order: 3;
+        margin: 16px auto 24px auto;
+        width: 100%;
+    }
+
+    .content-footer{
+        order: 4;
+    }
+
+    .content-footer{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .total-item-row-1{
+        flex-direction: column;
+    }
+
+    .total-influencer{
+        margin: 8px auto 8px 0;
+    }
+
+    .total-job{
+        margin: 8px auto 8px 0;
+    }
+
+    .total-item-row-2{
+        margin: 8px auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .price-quotation{
+        margin: 24px auto 8px auto;
+    }
+
+    .footer{
+        justify-content: center;
+        height: unset;
+        padding: unset;
+        margin-top: 16px;
+    }
+
+    .social{
+        justify-content: center;
+        margin: 28px auto 8px auto;
+    }
+
+    .brand-slogan{
+        justify-content: center;
+    }
+
+    .policy{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trademark{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .policy-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+        background: #3568D4;
+        padding: 16px;
+    }
+
+}   
