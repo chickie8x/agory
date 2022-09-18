@@ -102,8 +102,9 @@
         <!-- main content section  -->
         <div class="main-wrapper">
 
-            <h3>Tạo đăng tuyển</h3>
+            <h3 class="post-title">Tạo đăng tuyển</h3>
             <div class="process-steps">
+
                 <div class="step">
                     <img src="/assets/icons/curr-step.svg" alt="">
                     <span>Tiêu đề và kinh phí</span>
@@ -111,6 +112,120 @@
                 <div class="steps-divider">
                     <img src="/assets/icons/step-divider.svg" alt="">
                 </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Về chiến dịch</span>
+                </div>
+                <div class="steps-divider">
+                    <img src="/assets/icons/step-divider.svg" alt="">
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Về Influencer</span>
+                </div>
+                <div class="steps-divider">
+                    <img src="/assets/icons/step-divider.svg" alt="">
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Hiển thị</span>
+                </div>
+                <div class="steps-divider">
+                    <img src="/assets/icons/step-divider.svg" alt="">
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Xem lại và đăng</span>
+                </div>
+                <div class="steps-divider">
+                    <img src="/assets/icons/step-divider.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="box-container">
+
+                <!-- step1  -->
+                <div class="step1-box">
+                    <span class="box-title">Tiêu đề và kinh phí</span>
+                    <div class="title-section">
+                        <div class="title-input">
+                            <label for="title-text">Tiêu đề</label>
+                            <input type="text" id="title-text">
+                        </div>
+                    </div>
+                    <div class="box-desc">
+                        <span>Ví dụ: </span>
+                        <span>- Tìm influencer cho chiến dịch ra mắt sản phẩm đồ uống </span>
+                        <span>- Cần tìm influencer có lối sống lành mạnh </span>
+                        <span>- Influencer nam dưới 30 tuổi chụp hình thời trang</span>
+                    </div>
+                    <div class="cost-section">
+                        <span>Kinh phí</span>
+                        <div class="cost-input">
+                            <input type="text">
+                            <span>VND</span>
+                        </div>
+                    </div>
+                    <div class="VAT-section">
+                        <div>
+                            <input type="radio" name="vat">
+                            <label for="vat">Có lấy hóa đơn VAT</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vat">
+                            <label for="vat">Không lấy hóa đơn VAT</label>  
+                        </div>                                            
+                    </div>
+
+                    <div class="btn-section">
+                        <button class="btn-cancel">Hủy</button>
+                        <button class="btn-continue">Tiếp tục</button>
+                    </div>
+                </div>
+
+                <!-- step2  -->
+                <div class="step2-box">
+                    <span class="box-title">Mô tả chiến dịch</span>
+                    <div class="box-desc2">
+                        <span class="sub-title">Một mô tả đầy đủ nên có:  </span>
+                        <span>- Thông tin nhãn hàng và mục tiêu chiến dịch </span>
+                        <span>- Nhóm khách hàng bạn đang muốn nhắm tới </span>
+                        <span>- Số lượng Influencermong muốn và công việc phải làm </span>
+                        <span>- Dạng Influencer mà bạn đang nghĩ tới (travel blogger/ fashionista) </span>
+                        <span>- Ví dụ vài cái tên Influencer mà bạn mong muốn (nếu có)</span>
+                    </div>
+                    <div class="camp-desc">
+                        <textarea name="campdesc" id="campdesc"></textarea>
+                        <span>0/500</span>
+                    </div>
+
+                    <div class="files-attached">
+                        <div class="attached-section">
+                            <span>File đính kèm (tối đa 5 files , mỗi file < 100MB)</span>
+                            <div>
+                                <label for="files">Đính kèm <img src="/assets/icons/paper-clip.svg" alt=""></label>
+                                <input type="file" id="files" multiple>
+                            </div>                           
+                        </div>
+                        <div class="attached-list">
+                            <div>
+                                <span>File 1</span>
+                                <button class="attached-delele"><img src="/assets/icons/vuesax-linear-trash.svg" alt=""></button>
+                            </div>
+                            <div>
+                                <span>File 2</span>
+                                <button class="attached-delele"><img src="/assets/icons/vuesax-linear-trash.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
@@ -154,7 +269,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="newcamp-cost.jsjs"></script>
+    <script src="newcamp-cost.js"></script>
 </body>
 
 </html>
