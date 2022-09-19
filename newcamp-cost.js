@@ -37,4 +37,31 @@ $(document).ready(function () {
         collapse = !collapse;
     });
 
+    $(".js-range-slider").ionRangeSlider({
+        onStart: function (data) {
+            // Called right after range slider instance initialised
+        },
+
+        onChange: function (data) {
+            // Called every time handle position is changed
+            $('#min-age').text(data.from);
+            $('#max-age').text(data.to);
+            // console.log(data.to);
+        },
+
+        onFinish: function (data) {
+            // Called then action is done and mouse is released
+
+            // console.log(data.to);
+        },
+
+        onUpdate: function (data) {
+            // Called then slider is changed using Update public method
+
+            // console.log(data.from_percent);
+        }
+    });
+
+    // slider age end 
+
 });
