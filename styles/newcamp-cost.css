@@ -329,7 +329,7 @@ body{
     justify-content: flex-end;
 }
 
-.btn-cancel, .btn-back{
+.btn-cancel, .btn-back, .btn-save{
     background: none;
     outline: none;
     border: none;
@@ -339,7 +339,7 @@ body{
     margin-right: 24px;
 }
 
-.btn-continue{
+.btn-continue, .btn-post{
     outline: none;
     background: #3E7BFA;
     border: none;
@@ -351,7 +351,11 @@ body{
     font-family: 'Nunito';
 }
 
-.btn-cancel:focus, .btn-continue:focus, .btn-back:focus{
+.btn-post{
+    width: 142px;
+}
+
+.btn-cancel:focus, .btn-continue:focus, .btn-back:focus, .btn-save:focus, .btn-post:focus{
     outline: none;
 }
 
@@ -522,6 +526,7 @@ body{
     border-radius: 8px;
     margin-top: 24px;
     padding: 24px;
+    display: none;
 }
 
 .interested-influencer{
@@ -614,6 +619,99 @@ body{
     }
        
     /* age slider end */
+
+    /* step 4  */
+
+    .step4-box{
+        width: 760px;
+        height: 521px;
+        background: white;
+        box-shadow: 0px 20px 32px #60617029;
+        border-radius: 8px;
+        padding: 24px;
+        display: none;
+    }
+
+    #additional-question{
+        width: 716px;
+        height: 128px;
+        resize: none;
+        outline: none;
+        border: 1px solid #E4E4EB;
+        border-radius: 8px;
+        padding: 8px;
+        font-family: 'Nunito Light';
+        font-size: 14px;
+    }
+
+    .char-count{
+        display: block;
+        text-align: right;
+        font-family: 'Nunito Light';
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+
+    /* step 5  */
+    .step5-box{
+        width: 760px;
+        background-color: white;
+        box-shadow: 0px 20px 32px #60617029;
+        border-radius: 8px;
+        padding: 24px;
+        display: none;
+    }
+
+    .sum1-title{
+        font-family: 'Nunito Bold';
+        font-size: 16px;
+        color: #1C1C28;
+        display: block;
+    }
+
+    .sum1-title > img{
+        margin-left: 24px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .sum1-sub{
+        margin-top: 16px;
+    }
+
+    .sum2-sub{
+        margin-top: 8px;
+    }
+
+
+    /* step 6  */
+
+    .step6-box{
+        width: 760px;
+        background-color: white;
+        box-shadow: 0px 20px 32px #60617029;
+        border-radius: 8px;
+        padding: 24px;
+    }
+
+    .step6-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cooldown{
+        color: #3E7BFA;
+        font-family: 'Nunito Light';
+        font-size: 14px;
+    }
 
 
 
