@@ -190,7 +190,7 @@ body{
 }
 
 .step{
-    margin: auto 16px;
+    margin-right: 16px;
     display: flex;
     align-items: center;
 }
@@ -198,6 +198,10 @@ body{
 .step > span {
     font-family: 'Nunito';
     margin-left: 8px;
+}
+
+.steps-divider{
+    margin-left: 12px;
 }
 
 .box-container{
@@ -235,7 +239,6 @@ body{
 
 .step1-box{
     width: 564px;
-    height: 479px;
     box-shadow: 0px 20px 32px #60617029;
     border-radius: 8px;
     background: white;
@@ -521,6 +524,10 @@ body{
     transition-duration: 0.3s;
 }
 
+.item-checked{
+    background-color: #CCDDFF;
+}
+
 .grid-item:hover{
     background-color: #CCDDFF;
     transition-duration: 0.3s;
@@ -646,7 +653,6 @@ body{
 
     .step4-box{
         width: 760px;
-        height: 521px;
         background: white;
         box-shadow: 0px 20px 32px #60617029;
         border-radius: 8px;
@@ -656,7 +662,7 @@ body{
     }
 
     #additional-question{
-        width: 716px;
+        width: 100%;
         height: 128px;
         resize: none;
         outline: none;
@@ -798,11 +804,7 @@ body{
         width: 548px;
     }
 
-    .step2-box{
-        width: 736px;
-    }
-
-    .step5-box{
+    .step2-box, .step3-box, .step4-box, .step5-box, .step6-box{
         width: 736px;
     }
 
@@ -820,6 +822,54 @@ body{
       .menu-item{
           padding: 8px 12px;
       }
+
+      .main-wrapper{
+        padding: 0 8px;
+      }
+
+      .process-steps{
+        width: 100%;
+        overflow: auto;
+        display: -webkit-inline-box;
+        padding: 0;
+      }
+
+      .step{
+        min-width: fit-content;
+      }
+
+      .noti{
+        width: 100%;
+      }
+
+      .step1-box, .step2-box, .step3-box, .step4-box, .step5-box, .step6-box{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    #title-text{
+        width: 100%;
+    }
+
+    .subjects-grid{
+        grid-template-columns: repeat(2,auto);
+        width: 100%;
+    }
+
+    .grid-item{
+        width: 100%;
+    }
+
+    .step6-box{
+        margin: auto 8px;
+    }
+
+    .step6-body{
+        flex-direction: column;
+    }
+
+
   }
 
 

@@ -135,6 +135,16 @@ $(document).ready(function () {
         })
     })
     
+    $('input.item-check:checkbox').change(function(){
+        $(this).parent().toggleClass('item-checked')
+    })
+
+    $('input.item-check:radio').change(function(){
+        $('input.item-check:radio').each(function(){
+            $(this).parent().removeClass('item-checked')
+        })
+        $(this).parent().addClass('item-checked')
+    })
 
 
 });
