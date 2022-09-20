@@ -64,4 +64,77 @@ $(document).ready(function () {
 
     // slider age end 
 
+
+    var defaultStep = 0
+    
+    function stepMove(direction){
+        if(direction === 'next'){
+            defaultStep += 1
+        }
+        else{
+            defaultStep -= 1
+        }
+        
+        $('.step').each(function(idx){
+            if (idx === defaultStep){
+                $(this).find('>:first-child').prop('src','/assets/icons/curr-step.svg')
+            }
+            else if (idx < defaultStep){
+                $(this).find('>:first-child').prop('src','/assets/icons/completed-step.svg')
+            }
+            else{
+                $(this).find('>:first-child').prop('src','/assets/icons/default-step.svg')
+            }
+
+             $('.noti').each(function(){
+                if(defaultStep === 4){
+                     $(this).css('display', 'flex')
+                }
+                else{
+                    $(this).css('display', 'none')
+                }
+             })
+
+        })
+
+        $('.box-general').each(function(idx){
+            if(idx === defaultStep){
+                $(this).css('display','block')
+            }
+            else{
+                $(this).css('display','none')
+            }
+        })
+    }
+
+    $('.btn-continue').click(function(){
+        stepMove('next')
+    })
+
+    $('.btn-back').click(function(){
+        stepMove('back')
+    })
+
+    $('.btn-post').click(function(){
+        $('.box-general').each(function(idx){
+            if(idx===5){
+                $(this).css('display','block')
+                $('.process-steps').each(function(){
+                    $(this).css('display','none')
+                })
+                $('.post-title').each(function(){
+                    $(this).css('display','none')
+                })
+            }
+            else{
+                $(this).css('display','none')
+            }
+        })
+        $('.noti').each(function(){
+            $(this).css('display','none')
+        })
+    })
+    
+
+
 });
