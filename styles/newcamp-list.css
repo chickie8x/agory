@@ -154,7 +154,7 @@ body{
 
 
 .hide-item{
-    display: none;
+    display: none !important;
 }
 
 .show-item{
@@ -633,6 +633,171 @@ body{
     height: 16px;
     margin-right: 5px;
 }
+
+
+.list-table{
+    display: flex;
+    margin-top: 16px;
+    height: 56px;
+    align-items: center;
+}
+
+.selection-col{
+    width: 16px;
+    margin-right: 32px;
+}
+
+.selection-col >image { 
+    width: 100%;
+}
+
+.influencer-col {
+    width: 206px;
+    margin-right: 16px;
+}
+
+.type-col {
+    width: 67px;
+    margin-right: 16px;
+}
+
+.channel-col{
+    width: 48px;
+    margin-right: 16px;
+}
+
+.task-col{
+    width: 148px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.note-col {
+    width: 135px;
+    color: #555770;
+    font-size: 12px;
+    font-family: 'Nunito';
+}
+
+
+/* empty table section  */
+
+
+.empty-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 684px;
+    height: 220px;
+    margin-top: 40px;
+}
+
+.empty-img {
+    width: 320px;
+    height: 220px;
+    padding: 16px;
+    display: flex;
+}
+
+.empty-img > img{
+    object-fit: contain;
+    margin-left: 24px;
+}
+
+.empty-desc{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito';
+    margin-left: 32px;
+}
+
+.empty-title {
+    color: #3E7BFA;
+    font-size: 20px;
+    font-family: 'Nunito Bold';
+}
+
+.empty-text{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.empty-btn {
+    width: 136px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: #3E7BFA;
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.selection-decision{
+    margin-top: 8px;
+}
+
+.decision-yes, .decision-no{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.decision-yes > input, .decision-no > input{
+    margin-right: 8px;
+    scale: 1.2;
+}
+/* empty table section end  */
+
+
+
+/* table with data section  */
+
+.list-row{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+.influencer-col > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.influencer-col > a {
+    color: #555770;
+}
+
+.community-pill {
+    color: #3E7BFA;
+    width: 67px;
+    height: 20px;
+    border-radius: 8px;
+    border: solid 1px #3E7BFA;
+    font-size: 10px;
+    font-family: 'Nunito';
+    padding: 3px 8px;
+}
+
+.channel-col > img {
+    width: 32px;
+    height: 32px;
+}
+
+.task-col > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+
+
+
 
 
     /* step 4  */
