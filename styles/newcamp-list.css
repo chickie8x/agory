@@ -569,85 +569,71 @@ body{
     border-bottom: solid 1px #60617029;
 }
 
-
-.influencer-location {
-    margin-top: 8px;
-}
-
-.influencer-location > select {
-    min-width: 270px;
-    height: 40px;
-    padding: 8px;
-    border-radius: 8px;
-    appearance:none;
-    outline: none;
-    box-shadow: 0px 0.5px 2px #00000029;
-    border: solid 1px rgba(255, 255, 255, 0.2);
-    background-color: #FAFAFC;
-    color: #555770;
-    font-size: 14px;
-    font-family: 'Nunito Light';
-    background-image: url('/assets/icons/vuesax-linear-arrow-down.svg');
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-}
-
-.influencer-age-body{
-    width: 300px;
-}
-
-.influencer-age-value{
-    font-family: 'Nunito Light';
-    color: #555770;
-    font-size: 12px;
+.sumary-info{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
 }
 
-.age-value{
-    padding: 4px 12px;
-    background: #FFFFFF;
-    border: 1px solid #E4E4EB;
+.total-influencer, .total-task{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.btn-action{
+    margin-top: 16px;
+}
+
+.btn-action > button{
+    margin-right: 16px;
+    outline: none;
+    font-family: 'Nunito';
+    font-size: 12px;
     border-radius: 8px;
 }
 
-    /* age slider  */
+.btn-action > button:focus{
+    outline: none;
+}
 
-    .irs--flat{
-        height: 35px !important;
-    }
+.btn-action-add{
+    background-color: #3E7BFA;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+    width: 126px;
+    height: 32px;
+    border: none;
+}
 
-    .irs-line{
-        height: 2px !important;
-        background: #CCDDFF !important;
-    }
+.btn-action-copy, .btn-action-task{
+    color: #3E7BFA;
+    width: 118px;
+    height: 32px;
+    background: white;
+    border: solid 1px #3E7BFA;
+}
 
-    .irs--flat .irs-min, .irs--flat .irs-max{
-        display: none !important;
-    }
+.btn-action-task{
+    width: 194px;
+    height: 32px;
+}
 
-    .irs-bar{
-        height: 2px !important;
-        background: #3E7BFA !important;
-    }
-    
-    .irs-from, .irs-to{
-        display: none !important;
-    }
+.btn-action-delete{
+    color: #FF3B3B;
+    border: solid 1px #FF3B3B;
+    width: 89px;
+    height: 32px;
+    background: none;
+}
 
-    .irs--flat .irs-handle{
-        top: 18px !important;
-        background: white !important;
-        border-radius: 50% !important;
-        height: 16px !important;
-        box-shadow: 0px 2px 4px #60617029 !important;
-    }
+.btn-img{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
 
-    .irs--flat .irs-handle>i:first-child{
-        display: none !important;
-    }
-       
-    /* age slider end */
 
     /* step 4  */
 
