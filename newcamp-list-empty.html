@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/newcamp-list.css">
+    <link rel="stylesheet" href="/styles/newcamp-list-empty.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/0ea2bdc334.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/3rdlib/styles/ion.rangeSlider.min.css">
@@ -364,7 +364,7 @@
                                 <img class="btn-img" src="./assets/icons/vuesax-linear-add-circle-white.svg" alt=""> 
                                 Thêm mới
                             </button>
-                            <button class="mobile-back-btn"><img src="/assets/icons/arrow-left.svg" alt=""></button>
+                            <button class="mobile-select-list">Chọn danh sách</button>
                             <button class="btn-action-copy"> <img class="btn-img" src="./assets/icons/vuesax-linear-copy-blue.svg" alt="">Sao chép</button>
                             <button class="btn-action-task"><img class="btn-img" src="./assets/icons//briefcase-blue.svg" alt="">Chọn kênh & công việc</button>
                             <button class="btn-action-delete"><img class="btn-img" src="./assets/icons/red-trash.svg" alt="">Xoá</button>
@@ -386,166 +386,19 @@
                             <div class="note-col">Note</div>
                         </div>
 
-                        <!-- table rows  -->
-                        <div class="row-container">
-                            <div class="list-row">
-                                <div class="selection-col">
-                                    <input type="checkbox" class="checkbox-selection">
-                                </div>
-                                <div class="influencer-col">
-                                    <img src="/assets/images/useravt.png" alt="">
-                                    <a href="">Merrile Burgett</a>
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="type-col">
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="channel-col">
-                                    <img src="/assets/icons/icon_insta.png" alt="">
-                                </div>
-                                <div class="task-col">
-                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
-                                    <span>Đăng hình</span>
-                                </div>
-                                <div class="note-col">
-                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
-                                </div>
-                                <span class="task-mobile">Công việc</span>
-                                <span class="note-mobile">Ghi chú</span>
+                        <!-- empty list section  -->
+                        <div class="empty-list ">
+                            <div class="empty-img">
+                                <img src="/assets/icons/undraw_Selecting_team_re_ndkb.svg" alt="">
                             </div>
-
-                            <div class="list-row">
-                                <div class="selection-col">
-                                    <input type="checkbox" class="checkbox-selection">
-                                </div>
-                                <div class="influencer-col">
-                                    <img src="/assets/images/useravt.png" alt="">
-                                    <a href="">Merrile Burgett</a>
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="type-col">
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="channel-col">
-                                    <img src="/assets/icons/icon_insta.png" alt="">
-                                </div>
-                                <div class="task-col">
-                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
-                                    <span>Đăng hình</span>
-                                </div>
-                                <div class="note-col">
-                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
-                                </div>
-                                <span class="task-mobile">Công việc</span>
-                                <span class="note-mobile">Ghi chú</span>
+                            <div class="empty-desc">
+                                <span class="empty-title">Chưa có influencer nào trong danh sách</span>
+                                <span class="empty-text">Nhấn <span style="font-family: 'Nunito Bold';">Thêm mới</span> để thêm vào influencer mà bạn muốn hoặc sử dụng một danh sách đã tạo.</span>
+                                <button class="empty-btn">Chọn danh sách</button>
                             </div>
-
-                            <div class="list-row">
-                                <div class="selection-col" >
-                                    <input type="checkbox" class="checkbox-selection">
-                                </div>
-                                <div class="influencer-col">
-                                    <img src="/assets/images/useravt.png" alt="">
-                                    <a href="">Merrile Burgett</a>
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="type-col">
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="channel-col">
-                                    <img src="/assets/icons/icon_insta.png" alt="">
-                                </div>
-                                <div class="task-col">
-                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
-                                    <span>Đăng hình</span>
-                                </div>
-                                <div class="note-col">
-                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
-                                </div>
-                                <span class="task-mobile">Công việc</span>
-                                <span class="note-mobile">Ghi chú</span>
-                            </div>
-
-                            <div class="list-row">
-                                <div class="selection-col">
-                                    <input type="checkbox" class="checkbox-selection">
-                                </div>
-                                <div class="influencer-col">
-                                    <img src="/assets/images/useravt.png" alt="">
-                                    <a href="">Merrile Burgett</a>
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="type-col">
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="channel-col">
-                                    <img src="/assets/icons/icon_insta.png" alt="">
-                                </div>
-                                <div class="task-col">
-                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
-                                    <span>Đăng hình</span>
-                                </div>
-                                <div class="note-col">
-                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
-                                </div>
-                                <span class="task-mobile">Công việc</span>
-                                <span class="note-mobile">Ghi chú</span>
-                            </div>
-
-                            <div class="list-row">
-                                <div class="selection-col" >
-                                    <input type="checkbox" class="checkbox-selection">
-                                </div>
-                                <div class="influencer-col">
-                                    <img src="/assets/images/useravt.png" alt="">
-                                    <a href="">Merrile Burgett</a>
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="type-col">
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="channel-col">
-                                    <img src="/assets/icons/icon_insta.png" alt="">
-                                </div>
-                                <div class="task-col">
-                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
-                                    <span>Đăng hình</span>
-                                </div>
-                                <div class="note-col">
-                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
-                                </div>
-                                <span class="task-mobile">Công việc</span>
-                                <span class="note-mobile">Ghi chú</span>
-                            </div>
-
-                            <div class="list-row">
-                                <div class="selection-col" >
-                                    <input type="checkbox" class="checkbox-selection">
-                                </div>
-                                <div class="influencer-col">
-                                    <img src="/assets/images/useravt.png" alt="">
-                                    <a href="">Merrile Burgett</a>
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="type-col">
-                                    <span class="community-pill">Community</span>
-                                </div>
-                                <div class="channel-col">
-                                    <img src="/assets/icons/icon_insta.png" alt="">
-                                </div>
-                                <div class="task-col">
-                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
-                                    <span>Đăng hình</span>
-                                </div>
-                                <div class="note-col">
-                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
-                                </div>
-                                <span class="task-mobile">Công việc</span>
-                                <span class="note-mobile">Ghi chú</span>
-                            </div>
-                               
-    
                         </div>
+                        <!-- empty list section end  -->
+
 
                     </div>
 
@@ -731,7 +584,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="/3rdlib/scripts/ion.rangeSlider.min.js"></script>
-    <script src="newcamp-list.js"></script>
+    <script src="newcamp-list-empty.js"></script>
 </body>
 
 </html>
