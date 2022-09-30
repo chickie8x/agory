@@ -37,4 +37,14 @@ $(document).ready(function () {
         collapse = !collapse;
     });
 
+    $('.fixed-input').change(function(){
+        $(this).parent().toggleClass('item-selected')
+        $(this).next().toggleClass('hide-item')
+        $(this).next().next().toggleClass('hide-item')
+        $(this).next().next().next().toggleClass('text-change-color')
+        $(this).next().next().next().next().toggleClass('text-change-color')
+    })
+
+
+
 });

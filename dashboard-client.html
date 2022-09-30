@@ -108,7 +108,7 @@
 
                 <div class="tabs-job-header">
                     <span>Đăng tuyển của tôi <a href="">View all ></a></span>
-                    <button class="find-job-btn">Tạo đăng tuyển</button>
+                    <button class="find-job-btn" data-toggle="modal" data-target="#create-post">Tạo đăng tuyển</button>
                 </div>
 
                 <div class="tabs-job-content">
@@ -796,6 +796,72 @@
                 </div>
 
 
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="create-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <span class="title-modal">Tạo đăng tuyển</span>
+                            <div class="create-new-post">
+                                <div class="input-container">
+                                    <input type="radio" checked name="action-selection">
+                                    <span>Tạo một đăng tuyển mới</span>
+                                </div>
+                                
+                                <div class="type-container" >
+                                    <div class="fixed-cost">
+                                        <input type="checkbox" id="fixed-cost-input" class="fixed-input">
+                                        <img src="/assets/icons/vuesax-linear-video-square.svg" alt="">
+                                        <img src="/assets/icons/vuesax-linear-video-square-blue.svg" alt="" class="hide-item">
+                                        <span class="fixed-subtitle">Cố định chi phí</span>
+                                        <span class="fixed-subdesc">Đưa ra yêu cầu và ngân sách. Các vendors sẽ gửi giải pháp tốt nhất cho bạn lựa chọn.</span>
+                                    </div>
+                                    <div class="fixed-list">
+                                        <input type="checkbox" id="fixed-list-input" class="fixed-input">
+                                        <img src="/assets/icons/vuesax-linear-video-square.svg" alt="">
+                                        <img src="/assets/icons/vuesax-linear-video-square-blue.svg" alt="" class="hide-item">
+                                        <span class="fixed-subtitle">Cố định danh sách</span>
+                                        <span class="fixed-subdesc">Bạn đã biết mình cần Influencer nào và muốn nhận về báo giá tốt nhất.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="continue-with-draft">
+                                <div class="input-container">
+                                    <input type="radio" name="action-selection" >
+                                    <span>Tiếp tục với một bản nháp</span>
+                                </div>
+                                <div class="select-type">
+                                    <select name="select-draft" id="select-draft">
+                                        <option value="undefined">Chọn bản nháp</option>
+                                        <option value="follower">Lượng follower</option>
+                                        <option value="interaction">Tương tác trung bình</option>
+                                        <option value="rate-avg">Điểm trung bình</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="continue-with-draft">
+                                <div class="input-container">
+                                    <input type="radio" name="action-selection" >
+                                    <span>Sử dụng lại một đăng tuyển cũ</span>
+                                </div>
+                                <div class="select-type">
+                                    <select name="select-post" id="select-post">
+                                        <option value="undefined">Chọn đăng tuyển cũ</option>
+                                        <option value="follower">Lượng follower</option>
+                                        <option value="interaction">Tương tác trung bình</option>
+                                        <option value="rate-avg">Điểm trung bình</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-cancel-modal" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn-create-post">Tạo đăng tuyển</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
