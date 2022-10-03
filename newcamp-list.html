@@ -167,15 +167,10 @@
                         <span>- Cần tìm influencer có lối sống lành mạnh </span>
                         <span>- Influencer nam dưới 30 tuổi chụp hình thời trang</span>
                     </div>
-                    <div class="cost-section">
-                        <span>Kinh phí</span>
-                        <div class="cost-input">
-                            <input type="text">
-                            <span>VND</span>
-                        </div>
-                    </div>
+
                     <div class="VAT-section">
-                        <div>
+                        <span class="sub-title">Bạn có muốn lấy hóa đơn VAT không?</span>
+                        <div class="pt-1">
                             <input type="radio" name="vat">
                             <label for="vat">Có lấy hóa đơn VAT</label>
                         </div>
@@ -345,12 +340,12 @@
 
                         <div class="sumary-info">
                             <div class="total-influencer">
-                                <img src="./assets/icons/vuesax-linear-people.svg" alt="">
-                                <span>Tổng số influencer: <span class="total-ìnluencer-value"> 0</span></span>
+                                <img src="./assets/icons/vuesax-linear-people.svg" alt="" class="mr-2">
+                                <span>Tổng số influencer: <span class="total-influencer-value"> 0</span></span>
                             </div>
                             <div class="total-task">
-                                <img src="./assets/icons/vuesax-linear-briefcase.svg" alt="">
-                                <span>Tổng số công việc: <span class="total-ìnluencer-value"> 0</span></span>
+                                <img src="./assets/icons/vuesax-linear-briefcase.svg" alt="" class="mr-2">
+                                <span>Tổng số công việc: <span class="total-influencer-value"> 0</span></span>
                             </div>
                             <div class="VAT-switch">
                                 <label for="vat"></label>
@@ -622,7 +617,6 @@
                         <span class="sub-title sum1-sub">Tiêu đề</span>
                         <span>Tìm influencer review bộ dưỡng da mới</span>
                         <span class="sub-title sum2-sub">Kinh phí</span>
-                        <span>25.000.000 VND</span>
                         <span>Lấy hóa đơn VAT</span>
                     </div>
 
@@ -639,24 +633,183 @@
                     </div>
 
                     <div class="interested-influencer">
-                        <span class="sum1-title">Thông tin về influencer <img src="/assets/icons/vuesax-linear-edit.svg" alt=""></span>
-                        <span class="sub-title sum1-sub">Dạng influencer</span>
-                        <span>Du lịch - Trải nghiệm</span>
-                        <span>Mua sắm - Tiêu dùng</span>
-                        <span>Ẩm thực - Đồ uống</span>
-                        <span class="sub-title sum2-sub">Các kênh có thể sử dụng</span>
-                        <span>Facebook</span>
-                        <span>Instagram</span>
-                        <span class="sub-title sum2-sub">Công việc có thể làm</span>
-                        <span>Đăng hình</span>
-                        <span>Khác</span>
-                        <span class="sub-title sum2-sub">Giới tính</span>
-                        <span>Tất cả</span>
-                        <span class="sub-title sum2-sub">Địa điểm</span>
-                        <span>Hồ Chí Minh</span>
-                        <span>Hà Nội</span>
-                        <span class="sub-title sum2-sub">Tuổi đời</span>
-                        <span>24-35</span>
+                        <span class="sum1-title">Thông tin về Influencer <img src="/assets/icons/vuesax-linear-edit.svg" alt=""></span>
+                        <div class="sumary-info sumary-info-review">
+                            <div class="total-influencer">
+                                <img src="./assets/icons/vuesax-linear-people.svg" alt="" class="mr-2">
+                                <span>Tổng số influencer: <span class="total-influencer-value"> 0</span></span>
+                            </div>
+                            <div class="total-task">
+                                <img src="./assets/icons/vuesax-linear-briefcase.svg" alt="" class="mr-2">
+                                <span>Tổng số công việc: <span class="total-influencer-value"> 0</span></span>
+                            </div>
+                        </div>
+
+                        <!-- table header  -->
+                        <div class="list-table review-table-list">
+                            <div class="selection-col hide-item">
+                                <img src="/assets/icons/vuesax-linear-minus-square.svg"
+                                    class="check-icon check-some" alt="">
+                                <img src="/assets/icons/unchecked-all.svg" alt="" class="check-icon unchecked-all hide-item">
+                                <img src="/assets/icons/checked-all.svg" alt=""
+                                    class="check-icon checked-all hide-item">
+                            </div>
+                            <div class="influencer-col">Influencer</div>
+                            <div class="type-col">Type</div>
+                            <div class="channel-col">Kênh</div>
+                            <div class="task-col">Công việc</div>
+                            <div class="note-col">Note</div>
+                        </div>
+
+                        <!-- table rows  -->
+                        <div class="row-container row-container-review">
+                            <div class="list-row">
+                                <div class="influencer-col">
+                                    <img src="/assets/images/useravt.png" alt="">
+                                    <a href="">Merrile Burgett</a>
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="type-col">
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="channel-col">
+                                    <img src="/assets/icons/icon_insta.png" alt="">
+                                </div>
+                                <div class="task-col">
+                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                                    <span>Đăng hình</span>
+                                </div>
+                                <div class="note-col">
+                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                </div>
+                                <span class="task-mobile">Công việc</span>
+                                <span class="note-mobile">Ghi chú</span>
+                            </div>
+
+                            <div class="list-row">
+                                <div class="influencer-col">
+                                    <img src="/assets/images/useravt.png" alt="">
+                                    <a href="">Merrile Burgett</a>
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="type-col">
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="channel-col">
+                                    <img src="/assets/icons/icon_insta.png" alt="">
+                                </div>
+                                <div class="task-col">
+                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                                    <span>Đăng hình</span>
+                                </div>
+                                <div class="note-col">
+                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                </div>
+                                <span class="task-mobile">Công việc</span>
+                                <span class="note-mobile">Ghi chú</span>
+                            </div>
+
+                            <div class="list-row">
+                                <div class="influencer-col">
+                                    <img src="/assets/images/useravt.png" alt="">
+                                    <a href="">Merrile Burgett</a>
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="type-col">
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="channel-col">
+                                    <img src="/assets/icons/icon_insta.png" alt="">
+                                </div>
+                                <div class="task-col">
+                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                                    <span>Đăng hình</span>
+                                </div>
+                                <div class="note-col">
+                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                </div>
+                                <span class="task-mobile">Công việc</span>
+                                <span class="note-mobile">Ghi chú</span>
+                            </div>
+
+                            <div class="list-row">
+                                <div class="influencer-col">
+                                    <img src="/assets/images/useravt.png" alt="">
+                                    <a href="">Merrile Burgett</a>
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="type-col">
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="channel-col">
+                                    <img src="/assets/icons/icon_insta.png" alt="">
+                                </div>
+                                <div class="task-col">
+                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                                    <span>Đăng hình</span>
+                                </div>
+                                <div class="note-col">
+                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                </div>
+                                <span class="task-mobile">Công việc</span>
+                                <span class="note-mobile">Ghi chú</span>
+                            </div>
+
+                            <div class="list-row">
+                                <div class="influencer-col">
+                                    <img src="/assets/images/useravt.png" alt="">
+                                    <a href="">Merrile Burgett</a>
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="type-col">
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="channel-col">
+                                    <img src="/assets/icons/icon_insta.png" alt="">
+                                </div>
+                                <div class="task-col">
+                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                                    <span>Đăng hình</span>
+                                </div>
+                                <div class="note-col">
+                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                </div>
+                                <span class="task-mobile">Công việc</span>
+                                <span class="note-mobile">Ghi chú</span>
+                            </div>
+
+                            <div class="list-row">
+                                <div class="influencer-col">
+                                    <img src="/assets/images/useravt.png" alt="">
+                                    <a href="">Merrile Burgett</a>
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="type-col">
+                                    <span class="community-pill">Community</span>
+                                </div>
+                                <div class="channel-col">
+                                    <img src="/assets/icons/icon_insta.png" alt="">
+                                </div>
+                                <div class="task-col">
+                                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                                    <span>Đăng hình</span>
+                                </div>
+                                <div class="note-col">
+                                    <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                </div>
+                                <span class="task-mobile">Công việc</span>
+                                <span class="note-mobile">Ghi chú</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+                        <span class="sub-title sub-title-3 sub-title-3-review">Đề cử danh sách mới</span>
+                        <div class="selection-decision selection-decision-review">
+                            <div class="decision-yes">
+                                <span>Có - Tôi muốn biết có đề xuất nào hợp lý hơn không</span>
+                            </div>                           
+                        </div>
                     </div>
 
                     <div class="interested-influencer">
